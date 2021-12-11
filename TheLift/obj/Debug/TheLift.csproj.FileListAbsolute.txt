@@ -1,0 +1,169 @@
+D:\TheLift\TheLift\bin\Debug\TheLift.exe.config
+D:\TheLift\TheLift\bin\Debug\TheLift.exe
+D:\TheLift\TheLift\bin\Debug\TheLift.pdb
+D:\TheLift\TheLift\obj\Debug\TheLift.csprojResolveAssemblyReference.cache
+D:\TheLift\TheLift\obj\Debug\TheLift.Properties.Resources.resources
+D:\TheLift\TheLift\obj\Debug\TheLift.csproj.GenerateResource.cache
+D:\TheLift\TheLift\obj\Debug\TheLift.csproj.CoreCompileInputs.cache
+D:\TheLift\TheLift\obj\Debug\TheLift.exe
+D:\TheLift\TheLift\obj\Debug\TheLift.pdb
+D:\TheLift\TheLift\obj\Debug\TheLift.FrmCreateLift.resources
+D:\TheLift\TheLift\obj\Debug\TheLift.FrmLift.resources
+D:\TheLift\TheLift\bin\Debug\LiftModel.dll
+D:\TheLift\TheLift\bin\Debug\LiftModel.pdb
+D:\TheLift\TheLift\obj\Debug\TheLift.csproj.CopyComplete
+D:\TheLift\TheLift\obj\Debug\TheLift.Dialogs.FrmResults.resources
+F:\TheLift\TheLift\bin\Debug\TheLift.exe.config
+F:\TheLift\TheLift\obj\Debug\TheLift.exe
+F:\TheLift\TheLift\obj\Debug\TheLift.pdb
+F:\TheLift\TheLift\bin\Debug\TheLift.exe
+F:\TheLift\TheLift\bin\Debug\TheLift.pdb
+F:\TheLift\TheLift\bin\Debug\LiftModel.dll
+F:\TheLift\TheLift\bin\Debug\LiftModel.pdb
+F:\TheLift\TheLift\obj\Debug\TheLift.csprojResolveAssemblyReference.cache
+F:\TheLift\TheLift\obj\Debug\TheLift.FrmCreateLift.resources
+F:\TheLift\TheLift\obj\Debug\TheLift.Dialogs.FrmResults.resources
+F:\TheLift\TheLift\obj\Debug\TheLift.FrmLift.resources
+F:\TheLift\TheLift\obj\Debug\TheLift.Properties.Resources.resources
+F:\TheLift\TheLift\obj\Debug\TheLift.csproj.GenerateResource.Cache
+C:\Users\User\Desktop\TheLift\TheLift\bin\Debug\TheLift.exe.config
+C:\Users\User\Desktop\TheLift\TheLift\obj\Debug\TheLift.exe
+C:\Users\User\Desktop\TheLift\TheLift\obj\Debug\TheLift.pdb
+C:\Users\User\Desktop\TheLift\TheLift\bin\Debug\TheLift.exe
+C:\Users\User\Desktop\TheLift\TheLift\bin\Debug\TheLift.pdb
+C:\Users\User\Desktop\TheLift\TheLift\bin\Debug\LiftModel.dll
+C:\Users\User\Desktop\TheLift\TheLift\bin\Debug\LiftModel.pdb
+C:\Users\User\Desktop\TheLift\TheLift\obj\Debug\TheLift.csprojResolveAssemblyReference.cache
+C:\Users\User\Desktop\TheLift\TheLift\obj\Debug\TheLift.FrmCreateLift.resources
+C:\Users\User\Desktop\TheLift\TheLift\obj\Debug\TheLift.Dialogs.FrmResults.resources
+C:\Users\User\Desktop\TheLift\TheLift\obj\Debug\TheLift.FrmLift.resources
+C:\Users\User\Desktop\TheLift\TheLift\obj\Debug\TheLift.Properties.Resources.resources
+C:\Users\User\Desktop\TheLift\TheLift\obj\Debug\TheLift.csproj.GenerateResource.Cache
+C:\Users\User\Desktop\ТП\TheLift\TheLift\bin\Debug\TheLift.exe.config
+C:\Users\User\Desktop\ТП\TheLift\TheLift\obj\Debug\TheLift.exe
+C:\Users\User\Desktop\ТП\TheLift\TheLift\obj\Debug\TheLift.pdb
+C:\Users\User\Desktop\ТП\TheLift\TheLift\bin\Debug\TheLift.exe
+C:\Users\User\Desktop\ТП\TheLift\TheLift\bin\Debug\TheLift.pdb
+C:\Users\User\Desktop\ТП\TheLift\TheLift\bin\Debug\LiftModel.dll
+C:\Users\User\Desktop\ТП\TheLift\TheLift\bin\Debug\LiftModel.pdb
+C:\Users\User\Desktop\ТП\TheLift\TheLift\obj\Debug\TheLift.csprojResolveAssemblyReference.cache
+C:\Users\User\Desktop\ТП\TheLift\TheLift\obj\Debug\TheLift.FrmCreateLift.resources
+C:\Users\User\Desktop\ТП\TheLift\TheLift\obj\Debug\TheLift.Dialogs.FrmResults.resources
+C:\Users\User\Desktop\ТП\TheLift\TheLift\obj\Debug\TheLift.FrmLift.resources
+C:\Users\User\Desktop\ТП\TheLift\TheLift\obj\Debug\TheLift.Properties.Resources.resources
+C:\Users\User\Desktop\ТП\TheLift\TheLift\obj\Debug\TheLift.csproj.GenerateResource.Cache
+D:\РАФ, 3 курс\ТП\TheLift\TheLift\bin\Debug\TheLift.exe.config
+D:\РАФ, 3 курс\ТП\TheLift\TheLift\bin\Debug\TheLift.exe
+D:\РАФ, 3 курс\ТП\TheLift\TheLift\bin\Debug\TheLift.pdb
+D:\РАФ, 3 курс\ТП\TheLift\TheLift\bin\Debug\LiftModel.dll
+D:\РАФ, 3 курс\ТП\TheLift\TheLift\bin\Debug\LiftModel.pdb
+D:\РАФ, 3 курс\ТП\TheLift\TheLift\obj\Debug\TheLift.csprojAssemblyReference.cache
+D:\РАФ, 3 курс\ТП\TheLift\TheLift\obj\Debug\TheLift.FrmCreateLift.resources
+D:\РАФ, 3 курс\ТП\TheLift\TheLift\obj\Debug\TheLift.Dialogs.FrmResults.resources
+D:\РАФ, 3 курс\ТП\TheLift\TheLift\obj\Debug\TheLift.FrmLift.resources
+D:\РАФ, 3 курс\ТП\TheLift\TheLift\obj\Debug\TheLift.Properties.Resources.resources
+D:\РАФ, 3 курс\ТП\TheLift\TheLift\obj\Debug\TheLift.csproj.GenerateResource.cache
+D:\РАФ, 3 курс\ТП\TheLift\TheLift\obj\Debug\TheLift.csproj.CoreCompileInputs.cache
+D:\РАФ, 3 курс\ТП\TheLift\TheLift\obj\Debug\TheLift.csproj.CopyComplete
+D:\РАФ, 3 курс\ТП\TheLift\TheLift\obj\Debug\TheLift.exe
+D:\РАФ, 3 курс\ТП\TheLift\TheLift\obj\Debug\TheLift.pdb
+d:\Универ\проект тп\TheLift\TheLift\bin\Debug\TheLift.exe.config
+d:\Универ\проект тп\TheLift\TheLift\bin\Debug\TheLift.exe
+d:\Универ\проект тп\TheLift\TheLift\bin\Debug\TheLift.pdb
+d:\Универ\проект тп\TheLift\TheLift\bin\Debug\LiftModel.dll
+d:\Универ\проект тп\TheLift\TheLift\bin\Debug\LiftModel.pdb
+d:\Универ\проект тп\TheLift\TheLift\obj\Debug\TheLift.csprojAssemblyReference.cache
+d:\Универ\проект тп\TheLift\TheLift\obj\Debug\TheLift.FrmCreateLift.resources
+d:\Универ\проект тп\TheLift\TheLift\obj\Debug\TheLift.Dialogs.FrmResults.resources
+d:\Универ\проект тп\TheLift\TheLift\obj\Debug\TheLift.FrmLift.resources
+d:\Универ\проект тп\TheLift\TheLift\obj\Debug\TheLift.Properties.Resources.resources
+d:\Универ\проект тп\TheLift\TheLift\obj\Debug\TheLift.csproj.GenerateResource.cache
+d:\Универ\проект тп\TheLift\TheLift\obj\Debug\TheLift.csproj.CoreCompileInputs.cache
+d:\Универ\проект тп\TheLift\TheLift\obj\Debug\TheLift.csproj.CopyComplete
+d:\Универ\проект тп\TheLift\TheLift\obj\Debug\TheLift.exe
+d:\Универ\проект тп\TheLift\TheLift\obj\Debug\TheLift.pdb
+e:\Temp\Elevators\TheLift_1.0\TheLift\bin\Debug\TheLift.exe.config
+e:\Temp\Elevators\TheLift_1.0\TheLift\bin\Debug\TheLift.exe
+e:\Temp\Elevators\TheLift_1.0\TheLift\bin\Debug\TheLift.pdb
+e:\Temp\Elevators\TheLift_1.0\TheLift\bin\Debug\LiftModel.dll
+e:\Temp\Elevators\TheLift_1.0\TheLift\bin\Debug\LiftModel.pdb
+e:\Temp\Elevators\TheLift_1.0\TheLift\obj\Debug\TheLift.csprojAssemblyReference.cache
+e:\Temp\Elevators\TheLift_1.0\TheLift\obj\Debug\TheLift.FrmCreateLift.resources
+e:\Temp\Elevators\TheLift_1.0\TheLift\obj\Debug\TheLift.Dialogs.FrmResults.resources
+e:\Temp\Elevators\TheLift_1.0\TheLift\obj\Debug\TheLift.FrmLift.resources
+e:\Temp\Elevators\TheLift_1.0\TheLift\obj\Debug\TheLift.Properties.Resources.resources
+e:\Temp\Elevators\TheLift_1.0\TheLift\obj\Debug\TheLift.csproj.GenerateResource.cache
+e:\Temp\Elevators\TheLift_1.0\TheLift\obj\Debug\TheLift.csproj.CoreCompileInputs.cache
+e:\Temp\Elevators\TheLift_1.0\TheLift\obj\Debug\TheLift.csproj.CopyComplete
+e:\Temp\Elevators\TheLift_1.0\TheLift\obj\Debug\TheLift.exe
+e:\Temp\Elevators\TheLift_1.0\TheLift\obj\Debug\TheLift.pdb
+D:\Техпрог2\The_Lift_Final\obj\Debug\TheLift.csprojAssemblyReference.cache
+D:\Техпрог2\The_Lift_Final\obj\Debug\TheLift.FrmCreateLift.resources
+D:\Техпрог2\The_Lift_Final\obj\Debug\TheLift.Dialogs.FrmResults.resources
+D:\Техпрог2\The_Lift_Final\obj\Debug\TheLift.FrmLift.resources
+D:\Техпрог2\The_Lift_Final\obj\Debug\TheLift.Properties.Resources.resources
+D:\Техпрог2\The_Lift_Final\obj\Debug\TheLift.csproj.GenerateResource.cache
+D:\Техпрог2\The_Lift_Final\obj\Debug\TheLift.csproj.CoreCompileInputs.cache
+D:\Техпрог2\The_Lift_Final\obj\Debug\TheLift.exe
+D:\Техпрог2\The_Lift_Final\obj\Debug\TheLift.pdb
+D:\Техпрог2\The_Lift_Final\TheLift\obj\Debug\TheLift.csprojAssemblyReference.cache
+D:\Техпрог2\The_Lift_Final\TheLift\obj\Debug\TheLift.FrmCreateLift.resources
+D:\Техпрог2\The_Lift_Final\TheLift\obj\Debug\TheLift.Dialogs.FrmResults.resources
+D:\Техпрог2\The_Lift_Final\TheLift\obj\Debug\TheLift.FrmLift.resources
+D:\Техпрог2\The_Lift_Final\TheLift\obj\Debug\TheLift.Properties.Resources.resources
+D:\Техпрог2\The_Lift_Final\TheLift\obj\Debug\TheLift.csproj.GenerateResource.cache
+D:\Техпрог2\The_Lift_Final\TheLift\obj\Debug\TheLift.csproj.CoreCompileInputs.cache
+D:\Техпрог2\The_Lift_Final\TheLift\obj\Debug\TheLift.exe
+D:\Техпрог2\The_Lift_Final\TheLift\obj\Debug\TheLift.pdb
+D:\Техпрог2\The_Lift_Final\TheLift\bin\Debug\TheLift.exe.config
+D:\Техпрог2\The_Lift_Final\TheLift\bin\Debug\TheLift.exe
+D:\Техпрог2\The_Lift_Final\TheLift\bin\Debug\TheLift.pdb
+D:\Техпрог2\The_Lift_Final\TheLift\bin\Debug\LiftModel.dll
+D:\Техпрог2\The_Lift_Final\TheLift\bin\Debug\LiftModel.pdb
+D:\Техпрог2\The_Lift_Final\TheLift\obj\Debug\TheLift.csproj.CopyComplete
+D:\Техпрог2\The_Lift_Final(готов)\TheLift\obj\Debug\TheLift.csprojAssemblyReference.cache
+D:\Техпрог2\The_Lift_Final(готов)\TheLift\obj\Debug\TheLift.FrmCreateLift.resources
+D:\Техпрог2\The_Lift_Final(готов)\TheLift\obj\Debug\TheLift.Dialogs.FrmResults.resources
+D:\Техпрог2\The_Lift_Final(готов)\TheLift\obj\Debug\TheLift.FrmLift.resources
+D:\Техпрог2\The_Lift_Final(готов)\TheLift\obj\Debug\TheLift.Properties.Resources.resources
+D:\Техпрог2\The_Lift_Final(готов)\TheLift\obj\Debug\TheLift.csproj.GenerateResource.cache
+D:\Техпрог2\The_Lift_Final(готов)\TheLift\obj\Debug\TheLift.csproj.CoreCompileInputs.cache
+D:\Техпрог2\The_Lift_Final(готов)\TheLift\obj\Debug\TheLift.exe
+D:\Техпрог2\The_Lift_Final(готов)\TheLift\obj\Debug\TheLift.pdb
+D:\Техпрог2\The_Lift_Final(готов)\TheLift\bin\Debug\TheLift.exe.config
+D:\Техпрог2\The_Lift_Final(готов)\TheLift\bin\Debug\TheLift.exe
+D:\Техпрог2\The_Lift_Final(готов)\TheLift\bin\Debug\TheLift.pdb
+D:\Техпрог2\The_Lift_Final(готов)\TheLift\bin\Debug\LiftModel.dll
+D:\Техпрог2\The_Lift_Final(готов)\TheLift\bin\Debug\LiftModel.pdb
+D:\Техпрог2\The_Lift_Final(готов)\TheLift\obj\Debug\TheLift.csproj.CopyComplete
+D:\Техпрог2\The_Lift_Final(готов)\TheLift\obj\Debug\TheLift.Dialogs.FormTrevoga.resources
+C:\work\The_Lift_Final(готов)\TheLift\bin\Debug\TheLift.exe.config
+C:\work\The_Lift_Final(готов)\TheLift\bin\Debug\TheLift.exe
+C:\work\The_Lift_Final(готов)\TheLift\bin\Debug\TheLift.pdb
+C:\work\The_Lift_Final(готов)\TheLift\obj\Debug\TheLift.csprojAssemblyReference.cache
+C:\work\The_Lift_Final(готов)\TheLift\obj\Debug\TheLift.FrmLift.resources
+C:\work\The_Lift_Final(готов)\TheLift\obj\Debug\TheLift.Properties.Resources.resources
+C:\work\The_Lift_Final(готов)\TheLift\obj\Debug\TheLift.csproj.GenerateResource.cache
+C:\work\The_Lift_Final(готов)\TheLift\obj\Debug\TheLift.csproj.CoreCompileInputs.cache
+C:\work\The_Lift_Final(готов)\TheLift\obj\Debug\TheLift.exe
+C:\work\The_Lift_Final(готов)\TheLift\obj\Debug\TheLift.pdb
+C:\work\new\The_Lift_Final(готов)\TheLift\bin\Debug\TheLift.exe.config
+C:\work\new\The_Lift_Final(готов)\TheLift\bin\Debug\TheLift.exe
+C:\work\new\The_Lift_Final(готов)\TheLift\bin\Debug\TheLift.pdb
+C:\work\new\The_Lift_Final(готов)\TheLift\obj\Debug\TheLift.csprojAssemblyReference.cache
+C:\work\new\The_Lift_Final(готов)\TheLift\obj\Debug\TheLift.FrmLift.resources
+C:\work\new\The_Lift_Final(готов)\TheLift\obj\Debug\TheLift.Properties.Resources.resources
+C:\work\new\The_Lift_Final(готов)\TheLift\obj\Debug\TheLift.csproj.GenerateResource.cache
+C:\work\new\The_Lift_Final(готов)\TheLift\obj\Debug\TheLift.csproj.CoreCompileInputs.cache
+C:\work\new\The_Lift_Final(готов)\TheLift\obj\Debug\TheLift.exe
+C:\work\new\The_Lift_Final(готов)\TheLift\obj\Debug\TheLift.pdb
+C:\Users\Lenovo\Desktop\Lift\TheLift\obj\Debug\TheLift.exe
+C:\Users\Lenovo\Desktop\Lift\TheLift\obj\Debug\TheLift.pdb
+C:\Users\Lenovo\Desktop\Lift\TheLift\bin\Debug\TheLift.exe.config
+C:\Users\Lenovo\Desktop\Lift\TheLift\bin\Debug\TheLift.exe
+C:\Users\Lenovo\Desktop\Lift\TheLift\bin\Debug\TheLift.pdb
+C:\Users\Lenovo\Desktop\Lift\TheLift\obj\Debug\TheLift.csproj.AssemblyReference.cache
+C:\Users\Lenovo\Desktop\Lift\TheLift\obj\Debug\TheLift.FrmLift.resources
+C:\Users\Lenovo\Desktop\Lift\TheLift\obj\Debug\TheLift.Properties.Resources.resources
+C:\Users\Lenovo\Desktop\Lift\TheLift\obj\Debug\TheLift.csproj.GenerateResource.cache
+C:\Users\Lenovo\Desktop\Lift\TheLift\obj\Debug\TheLift.csproj.CoreCompileInputs.cache

@@ -1,0 +1,15 @@
+e:\Temp\Elevators\TheLift_1.0\TheLift\bin\Debug\TheLift.exe.config
+e:\Temp\Elevators\TheLift_1.0\TheLift\bin\Debug\TheLift.exe
+e:\Temp\Elevators\TheLift_1.0\TheLift\bin\Debug\TheLift.pdb
+e:\Temp\Elevators\TheLift_1.0\TheLift\bin\Debug\LiftModel.dll
+e:\Temp\Elevators\TheLift_1.0\TheLift\bin\Debug\LiftModel.pdb
+e:\Temp\Elevators\TheLift_1.0\TheLift\obj\Debug\Presenter.csprojAssemblyReference.cache
+e:\Temp\Elevators\TheLift_1.0\TheLift\obj\Debug\TheLift.FrmCreateLift.resources
+e:\Temp\Elevators\TheLift_1.0\TheLift\obj\Debug\TheLift.Dialogs.FrmResults.resources
+e:\Temp\Elevators\TheLift_1.0\TheLift\obj\Debug\TheLift.FrmLift.resources
+e:\Temp\Elevators\TheLift_1.0\TheLift\obj\Debug\TheLift.Properties.Resources.resources
+e:\Temp\Elevators\TheLift_1.0\TheLift\obj\Debug\Presenter.csproj.GenerateResource.cache
+e:\Temp\Elevators\TheLift_1.0\TheLift\obj\Debug\Presenter.csproj.CoreCompileInputs.cache
+e:\Temp\Elevators\TheLift_1.0\TheLift\obj\Debug\Presenter.csproj.CopyComplete
+e:\Temp\Elevators\TheLift_1.0\TheLift\obj\Debug\TheLift.exe
+e:\Temp\Elevators\TheLift_1.0\TheLift\obj\Debug\TheLift.pdb
