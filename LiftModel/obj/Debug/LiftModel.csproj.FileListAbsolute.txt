@@ -1,0 +1,16 @@
+C:\work\new\Lift\LiftModel\obj\Debug\LiftModel.Properties.Resources.resources
+C:\work\new\Lift\LiftModel\obj\Debug\LiftModel.csproj.GenerateResource.cache
+C:\work\new\Lift\LiftModel\obj\Debug\LiftModel.csproj.CoreCompileInputs.cache
+C:\work\new\Lift\LiftModel\bin\Debug\LiftModel.dll
+C:\work\new\Lift\LiftModel\bin\Debug\LiftModel.pdb
+C:\work\new\Lift\LiftModel\obj\Debug\LiftModel.dll
+C:\work\new\Lift\LiftModel\obj\Debug\LiftModel.pdb
+C:\work\new\Lift\LiftModel\obj\Debug\LiftModel.csprojAssemblyReference.cache
+C:\Users\Lenovo\Desktop\GOVNO\LiftModel\bin\Debug\LiftModel.dll
+C:\Users\Lenovo\Desktop\GOVNO\LiftModel\bin\Debug\LiftModel.pdb
+C:\Users\Lenovo\Desktop\GOVNO\LiftModel\obj\Debug\LiftModel.csproj.AssemblyReference.cache
+C:\Users\Lenovo\Desktop\GOVNO\LiftModel\obj\Debug\LiftModel.Properties.Resources.resources
+C:\Users\Lenovo\Desktop\GOVNO\LiftModel\obj\Debug\LiftModel.csproj.GenerateResource.cache
+C:\Users\Lenovo\Desktop\GOVNO\LiftModel\obj\Debug\LiftModel.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\Desktop\GOVNO\LiftModel\obj\Debug\LiftModel.dll
+C:\Users\Lenovo\Desktop\GOVNO\LiftModel\obj\Debug\LiftModel.pdb

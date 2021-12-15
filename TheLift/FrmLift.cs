@@ -1,22 +1,20 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Threading;
 using System.Windows.Forms;
+using System.Collections.Generic;
 
 
 namespace TheLift
 {
     public partial class FrmLift : Form
     {
-        
+        public IPersonCreatable personCreatable;
+
         public FrmLift()
         {
             InitializeComponent();
+            personCreatable = new Presenter(this);
+
         }
 
         private void txtCurrentFloor_TextChanged(object sender, EventArgs e)
@@ -68,12 +66,24 @@ namespace TheLift
 
         private void button1_Click(object sender, EventArgs e)
         {
-           
+            
         }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
+            int m = 0;
+            int s = 0;
 
+            timer1.Start();
+
+            s = s + 1;
+            if (s == 61)
+            {
+                m = m + 1;
+                s = 0;
+            }
+
+            this.timerLabel.Text = " Время работы: " + m + ":" + s;
         }
 
         private void timerLabel_Click(object sender, EventArgs e)
