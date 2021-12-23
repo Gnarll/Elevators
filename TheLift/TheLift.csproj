@@ -8,7 +8,7 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>TheLift</RootNamespace>
     <AssemblyName>TheLift</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <TargetFrameworkProfile />
@@ -63,6 +63,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Dialogs\CreateLiftPresenter.cs" />
     <Compile Include="Dialogs\FrmCreateLift.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -75,6 +76,7 @@
     <Compile Include="Dialogs\FrmStat.Designer.cs">
       <DependentUpon>FrmStat.cs</DependentUpon>
     </Compile>
+    <Compile Include="Dialogs\ILiftCreatable.cs" />
     <Compile Include="FrmLift.cs">
       <SubType>Form</SubType>
     </Compile>
