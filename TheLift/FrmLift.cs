@@ -9,6 +9,7 @@ namespace TheLift
     public partial class FrmLift : Form
     {
         public IPersonCreatable personCreatable;
+        public bool IsActive = false;
 
         public FrmLift()
         {

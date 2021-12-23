@@ -6,3 +6,11 @@ C:\work\new\Lift\LiftModel\bin\Debug\LiftModel.pdb
 C:\work\new\Lift\LiftModel\obj\Debug\LiftModel.dll
 C:\work\new\Lift\LiftModel\obj\Debug\LiftModel.pdb
 C:\work\new\Lift\LiftModel\obj\Debug\LiftModel.csprojAssemblyReference.cache
+C:\work\new\1\Elevators\LiftModel\bin\Debug\LiftModel.dll
+C:\work\new\1\Elevators\LiftModel\bin\Debug\LiftModel.pdb
+C:\work\new\1\Elevators\LiftModel\obj\Debug\LiftModel.csprojAssemblyReference.cache
+C:\work\new\1\Elevators\LiftModel\obj\Debug\LiftModel.Properties.Resources.resources
+C:\work\new\1\Elevators\LiftModel\obj\Debug\LiftModel.csproj.GenerateResource.cache
+C:\work\new\1\Elevators\LiftModel\obj\Debug\LiftModel.csproj.CoreCompileInputs.cache
+C:\work\new\1\Elevators\LiftModel\obj\Debug\LiftModel.dll
+C:\work\new\1\Elevators\LiftModel\obj\Debug\LiftModel.pdb
