@@ -19,7 +19,9 @@ namespace TheLift
             View = frm;
             View.button1.Click += BtnCreateLift_Click;
             View.btnControl.Click += BtnControl_Click;
+            View.btnCreatePerson.Click += BtnCreatePerson_Click;
         }
+
         private void BtnCreateLift_Click(object sender, EventArgs e)
         {
             FrmCreateLift fcr = new FrmCreateLift();
@@ -27,6 +29,7 @@ namespace TheLift
             if (dr == DialogResult.Yes)
             {
                 this.OurLift = fcr.NewLift;
+                View.txtCurrentFloor.Text = OurLift.CurrentFloor.ToString();
                 RefreshButtons();
             }
         }
@@ -40,6 +43,8 @@ namespace TheLift
 
             }
         }
+
+
         private void BtnControl_Click(object sender, EventArgs e)
         {
             if (OurLift != null)
@@ -73,9 +78,29 @@ namespace TheLift
             }
         }
 
+        private void BtnCreatePerson_Click(object sender, EventArgs e)
+        {
+            PersonCreate();
+            RefreshQueue();
+        }
+
         public void PersonCreate()
         {
+            int StartFloor = Convert.ToInt32(View.nudCurrentFloor.Value);
+            int TargetFloor = Convert.ToInt32(View.nudTargetFloor.Value);
+            Person person = new Person(StartFloor, TargetFloor);
+            OurLift.AddToQueue(person);
+        }
 
+        public void RefreshQueue()// обновление элементов управления
+        {
+
+            View.lbQueue.Items.Clear(); 
+            View.lbQueue.DisplayMember = "Info";
+            foreach (Person pe in OurLift.Queue)
+            {
+                View.lbQueue.Items.Add(pe);
+            }
         }
     }
 }
