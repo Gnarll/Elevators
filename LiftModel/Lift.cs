@@ -10,6 +10,8 @@ namespace LiftModel
     {
         public int Floors { get; set; } 
         public List<LiftButton> Buttons { get; set; } = new List<LiftButton>();
+        public int CurrentMin = 0;
+        public int CurrentSec = 0;
 
         public Lift(int floors)
         {
@@ -24,6 +26,16 @@ namespace LiftModel
                 LiftButton lb = new LiftButton(i, false);
                 Buttons.Add(lb);
 
+            }
+        }
+
+        public void TimerUpdate()
+        {
+            CurrentSec++;
+            if (CurrentSec > 60)
+            {
+                CurrentSec = 0;
+                CurrentMin++;
             }
         }
 
