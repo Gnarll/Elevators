@@ -9,17 +9,49 @@ namespace TheLift
     {
         public Lift OurLift;
         private FrmLift View;
-        Thread TimerThread;
+        Thread TimerThread, MovingLift;
 
         public Presenter(FrmLift frm)
         {
             TimerThread = new Thread(new ThreadStart(RefreshTimer));
+            MovingLift = new Thread(new ThreadStart(Control));
+
+            MovingLift.Start();
+            MovingLift.Suspend();
             TimerThread.Start();
             TimerThread.Suspend();
+
             View = frm;
             View.button1.Click += BtnCreateLift_Click;
             View.btnControl.Click += BtnControl_Click;
             View.btnCreatePerson.Click += BtnCreatePerson_Click;
+            View.button3.Click += TimePerFloor_Click;
+        }
+
+        private void TimePerFloor_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                OurLift.SetTimeMoving(Int32.Parse(View.TimePerFloorTextBox.Text) * 1000);
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Введите целое число", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        public void Control()
+        {
+            OurLift.Move();
+            Thread.Sleep(OurLift.GetTimeMoving());
+            if (View.txtCurrentFloor.InvokeRequired)
+            {
+                View.txtCurrentFloor.Invoke(new MethodInvoker(delegate
+                {
+                    View.txtCurrentFloor.Text = OurLift.CurrentFloor.ToString();
+                }));   
+            }
+                    
         }
 
         private void BtnCreateLift_Click(object sender, EventArgs e)
@@ -52,6 +84,7 @@ namespace TheLift
                 View.IsActive = !View.IsActive;
                 if (View.IsActive)
                 {
+                    MovingLift.Resume();
                     TimerThread.Resume();
                     View.btnControl.Text = "Остановить систему";
                     View.splitContainer2.Enabled = true;
@@ -59,6 +92,7 @@ namespace TheLift
                 }
                 else
                 {
+                    MovingLift.Suspend();
                     TimerThread.Suspend();
                     View.btnControl.Text = "Запустить систему";
                     View.splitContainer2.Enabled = false;
@@ -90,6 +124,7 @@ namespace TheLift
             int TargetFloor = Convert.ToInt32(View.nudTargetFloor.Value);
             Person person = new Person(StartFloor, TargetFloor);
             OurLift.AddToQueue(person);
+
         }
 
         public void RefreshQueue()// обновление элементов управления
@@ -100,6 +135,16 @@ namespace TheLift
             foreach (Person pe in OurLift.Queue)
             {
                 View.lbQueue.Items.Add(pe);
+            }
+        }
+
+        public void RefreshPessengers()
+        {
+            View.lbPessengers.Items.Clear();
+            View.lbPessengers.DisplayMember = "Info";
+            foreach (Person pe in OurLift.Pessengers)
+            {
+                View.lbPessengers.Items.Add(pe);
             }
         }
     }

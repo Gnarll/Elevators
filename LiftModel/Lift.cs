@@ -14,9 +14,21 @@ namespace LiftModel
         public List<LiftButton> Buttons { get; set; } = new List<LiftButton>();
         public List<Person> Queue { get; set; } = new List<Person>();
         public List<Person> Pessengers { get; set; } = new List<Person>();
-
+        public int ActiveUsers => Pessengers.Count + Queue.Count;
         public int CurrentMin = 0;
         public int CurrentSec = 0;
+        private int timeMoving = 1000;
+        public bool IsMove { get; set; } = false;
+        public bool IsEmpty { get; set; } = true;
+        public int GetTimeMoving()
+        {
+            return timeMoving;
+        }
+
+        public void SetTimeMoving(int value)
+        {
+            timeMoving = value;
+        }
 
         public Lift(int floors)
         {
@@ -24,9 +36,15 @@ namespace LiftModel
             InitializeButtons();
         }
 
+        public void Move()
+        {
+                IsMove = true;
+                CurrentFloor++;
+        }
+
         public void AddToQueue(Person person)
         {
-            Queue.Add(person);          
+            Queue.Add(person);
         }
 
         private void InitializeButtons()
@@ -39,6 +57,8 @@ namespace LiftModel
             }
         }
 
+
+
         public void TimerUpdate()
         {
             CurrentSec++;
@@ -48,8 +68,5 @@ namespace LiftModel
                 CurrentMin++;
             }
         }
-
-        
-
     }
 }
