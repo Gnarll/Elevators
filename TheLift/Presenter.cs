@@ -1,7 +1,6 @@
 ﻿using System;
 using LiftModel;
 using System.Windows.Forms;
-using System.Collections.Generic;
 
 namespace TheLift
 {
@@ -19,12 +18,26 @@ namespace TheLift
         {
             FrmCreateLift fcr = new FrmCreateLift();
             DialogResult dr = fcr.ShowDialog();
-
+            if (dr == DialogResult.Yes)
+            {
+                this.OurLift = fcr.NewLift;
+                RefreshButtons();
+            }
         }
+
+        public void RefreshButtons()
+        {
+            View.TableButtons.Items.Clear();
+            foreach (LiftButton btn in OurLift.Buttons)
+            {
+                View.TableButtons.Items.Add(btn.Number.ToString(), btn.IsActive);
+
+            }
+        }
+
         public void PersonCreate()
         {
 
         }
-
     }
 }
