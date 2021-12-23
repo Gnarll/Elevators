@@ -16,5 +16,10 @@ namespace LiftModel
             Number = num;
             IsActive = isActive;
         }
+
+        public void ChangeActivity(bool Value)
+        {
+            IsActive = Value;
+        }
     }
 }
