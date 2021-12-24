@@ -5,6 +5,6 @@
         void PersonCreate();
         void RefreshButtons();
         void RefreshQueue();
-
+        void RefreshPessengers();
     }
 }
