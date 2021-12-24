@@ -10,6 +10,8 @@ namespace TheLift
         public Lift OurLift;
         private FrmLift View;
         Thread TimerThread, MovingLift;
+        private delegate void VoidDelegate();
+        private delegate int Add(object obj);
 
         public Presenter(FrmLift frm)
         {
@@ -42,15 +44,30 @@ namespace TheLift
 
         public void Control()
         {
-            OurLift.Move();
-            Thread.Sleep(OurLift.GetTimeMoving());
-            if (View.txtCurrentFloor.InvokeRequired)
+
+            while (View.IsActive)
             {
-                View.txtCurrentFloor.Invoke(new MethodInvoker(delegate
+                if (OurLift.ActiveUsers > 0)
                 {
-                    View.txtCurrentFloor.Text = OurLift.CurrentFloor.ToString();
-                }));   
+                    OurLift.Move();
+                    Thread.Sleep(OurLift.GetTimeMoving());
+                    if (View.txtCurrentFloor.InvokeRequired)
+                    {
+                        View.txtCurrentFloor.Invoke(new MethodInvoker(delegate
+                        {
+                            View.txtCurrentFloor.Text = OurLift.CurrentFloor.ToString();
+                        }));   
+                    }
+                    RefreshQueue();
+                    RefreshButtons();
+                    RefreshPessengers();
+                }
+                else
+                {
+                    OurLift.IsMove = false;
+                }
             }
+            
                     
         }
 
@@ -68,11 +85,12 @@ namespace TheLift
 
         public void RefreshButtons()
         {
-            View.TableButtons.Items.Clear();
+            VoidDelegate clear = View.TableButtons.Items.Clear;
+            Add add = View.TableButtons.Items.Add;
+            View.Invoke(clear);
             foreach (LiftButton btn in OurLift.Buttons)
             {
-                View.TableButtons.Items.Add(btn.Number.ToString(), btn.IsActive);
-
+                View.Invoke(add, btn.Number.ToString());
             }
         }
 
@@ -116,6 +134,7 @@ namespace TheLift
         {
             PersonCreate();
             RefreshQueue();
+            RefreshPessengers();
         }
 
         public void PersonCreate()
@@ -130,22 +149,34 @@ namespace TheLift
         public void RefreshQueue()// обновление элементов управления
         {
 
-            View.lbQueue.Items.Clear(); 
+            VoidDelegate clear = View.lbQueue.Items.Clear;
+            Add add = View.lbQueue.Items.Add;
+            View.Invoke(clear);
             View.lbQueue.DisplayMember = "Info";
             foreach (Person pe in OurLift.Queue)
             {
-                View.lbQueue.Items.Add(pe);
+                View.Invoke(add, pe);
             }
         }
 
         public void RefreshPessengers()
         {
-            View.lbPessengers.Items.Clear();
+            VoidDelegate clear = View.lbPessengers.Items.Clear;
+            Add add = View.lbPessengers.Items.Add;
+            View.Invoke(clear);
             View.lbPessengers.DisplayMember = "Info";
             foreach (Person pe in OurLift.Pessengers)
             {
-                View.lbPessengers.Items.Add(pe);
+                View.Invoke(add, pe);
             }
+        }
+
+        public void Refresh()
+        {
+
+            RefreshQueue();
+            RefreshButtons();
+            RefreshPessengers();
         }
     }
 }
