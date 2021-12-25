@@ -29,53 +29,114 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.txtTime = new System.Windows.Forms.TextBox();
+            this.txtPeople = new System.Windows.Forms.TextBox();
+            this.txtEmptyTrips = new System.Windows.Forms.TextBox();
+            this.txtTrips = new System.Windows.Forms.TextBox();
+            this.btnToExcel = new System.Windows.Forms.Button();
+            this.btnToWord = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.button3 = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btnOK = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.textBox5);
-            this.groupBox1.Controls.Add(this.textBox4);
-            this.groupBox1.Controls.Add(this.textBox3);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Controls.Add(this.button2);
-            this.groupBox1.Controls.Add(this.button1);
+            this.groupBox1.Controls.Add(this.txtTime);
+            this.groupBox1.Controls.Add(this.txtPeople);
+            this.groupBox1.Controls.Add(this.txtEmptyTrips);
+            this.groupBox1.Controls.Add(this.txtTrips);
+            this.groupBox1.Controls.Add(this.btnToExcel);
+            this.groupBox1.Controls.Add(this.btnToWord);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(27, 48);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(679, 431);
+            this.groupBox1.Size = new System.Drawing.Size(679, 375);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             // 
-            // label1
+            // txtTime
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.ForeColor = System.Drawing.Color.Snow;
-            this.label1.Location = new System.Drawing.Point(28, 45);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(339, 29);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Общее количество поездок";
+            this.txtTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.txtTime.Location = new System.Drawing.Point(462, 193);
+            this.txtTime.Name = "txtTime";
+            this.txtTime.Size = new System.Drawing.Size(194, 34);
+            this.txtTime.TabIndex = 11;
+            // 
+            // txtPeople
+            // 
+            this.txtPeople.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.txtPeople.Location = new System.Drawing.Point(582, 143);
+            this.txtPeople.Name = "txtPeople";
+            this.txtPeople.Size = new System.Drawing.Size(74, 34);
+            this.txtPeople.TabIndex = 10;
+            // 
+            // txtEmptyTrips
+            // 
+            this.txtEmptyTrips.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.txtEmptyTrips.Location = new System.Drawing.Point(533, 93);
+            this.txtEmptyTrips.Name = "txtEmptyTrips";
+            this.txtEmptyTrips.Size = new System.Drawing.Size(123, 34);
+            this.txtEmptyTrips.TabIndex = 8;
+            // 
+            // txtTrips
+            // 
+            this.txtTrips.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.txtTrips.Location = new System.Drawing.Point(502, 45);
+            this.txtTrips.Name = "txtTrips";
+            this.txtTrips.Size = new System.Drawing.Size(154, 34);
+            this.txtTrips.TabIndex = 7;
+            // 
+            // btnToExcel
+            // 
+            this.btnToExcel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnToExcel.Location = new System.Drawing.Point(241, 320);
+            this.btnToExcel.Name = "btnToExcel";
+            this.btnToExcel.Size = new System.Drawing.Size(401, 41);
+            this.btnToExcel.TabIndex = 6;
+            this.btnToExcel.Text = "Вывод информации в MS Excel";
+            this.btnToExcel.UseVisualStyleBackColor = true;
+            // 
+            // btnToWord
+            // 
+            this.btnToWord.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnToWord.Location = new System.Drawing.Point(241, 263);
+            this.btnToWord.Name = "btnToWord";
+            this.btnToWord.Size = new System.Drawing.Size(401, 41);
+            this.btnToWord.TabIndex = 5;
+            this.btnToWord.Text = "Вывод информации в MS Word";
+            this.btnToWord.UseVisualStyleBackColor = true;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label5.ForeColor = System.Drawing.Color.Snow;
+            this.label5.Location = new System.Drawing.Point(28, 193);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(263, 29);
+            this.label5.TabIndex = 4;
+            this.label5.Text = "Время работы лифта";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label4.ForeColor = System.Drawing.Color.Snow;
+            this.label4.Location = new System.Drawing.Point(28, 143);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(408, 29);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "Количество перевезенных людей";
             // 
             // label2
             // 
@@ -89,145 +150,74 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Количество холостых поездок";
             // 
-            // label3
+            // label1
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.ForeColor = System.Drawing.Color.Snow;
-            this.label3.Location = new System.Drawing.Point(28, 142);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(391, 29);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Суммарный перемещенный вес";
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.ForeColor = System.Drawing.Color.Snow;
+            this.label1.Location = new System.Drawing.Point(28, 45);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(339, 29);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Общее количество поездок";
             // 
-            // label4
+            // btnOK
             // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label4.ForeColor = System.Drawing.Color.Snow;
-            this.label4.Location = new System.Drawing.Point(28, 190);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(408, 29);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Количество перевезенных людей";
+            this.btnOK.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnOK.Location = new System.Drawing.Point(529, 443);
+            this.btnOK.Name = "btnOK";
+            this.btnOK.Size = new System.Drawing.Size(154, 43);
+            this.btnOK.TabIndex = 1;
+            this.btnOK.Text = "OK";
+            this.btnOK.UseVisualStyleBackColor = true;
             // 
-            // label5
+            // label6
             // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label5.ForeColor = System.Drawing.Color.Snow;
-            this.label5.Location = new System.Drawing.Point(28, 239);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(263, 29);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Время работы лифта";
+            this.label6.AutoSize = true;
+            this.label6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label6.Location = new System.Drawing.Point(676, 9);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(31, 29);
+            this.label6.TabIndex = 2;
+            this.label6.Text = "X";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.Location = new System.Drawing.Point(241, 281);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(401, 41);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Вывод информации в MS Word";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button2.Location = new System.Drawing.Point(241, 340);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(401, 41);
-            this.button2.TabIndex = 6;
-            this.button2.Text = "Вывод информации в MS Excel";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox1.Location = new System.Drawing.Point(502, 45);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(154, 34);
-            this.textBox1.TabIndex = 7;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox2.Location = new System.Drawing.Point(533, 93);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(123, 34);
-            this.textBox2.TabIndex = 8;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox3.Location = new System.Drawing.Point(563, 142);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(93, 34);
-            this.textBox3.TabIndex = 9;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox4.Location = new System.Drawing.Point(582, 190);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(74, 34);
-            this.textBox4.TabIndex = 10;
-            // 
-            // textBox5
-            // 
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox5.Location = new System.Drawing.Point(462, 237);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(194, 34);
-            this.textBox5.TabIndex = 11;
-            // 
-            // button3
-            // 
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button3.Location = new System.Drawing.Point(529, 493);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(154, 43);
-            this.button3.TabIndex = 1;
-            this.button3.Text = "OK";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // FormStat
+            // FrmStat
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.ClientSize = new System.Drawing.Size(724, 548);
-            this.Controls.Add(this.button3);
+            this.ClientSize = new System.Drawing.Size(724, 513);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.btnOK);
             this.Controls.Add(this.groupBox1);
             this.Cursor = System.Windows.Forms.Cursors.Default;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "FormStat";
-            this.Text = "FormStat";
+            this.Name = "FrmStat";
+            this.Text = "Statistic";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        internal System.Windows.Forms.TextBox txtTime;
+        internal System.Windows.Forms.TextBox txtPeople;
+        internal System.Windows.Forms.TextBox txtEmptyTrips;
+        internal System.Windows.Forms.TextBox txtTrips;
+        internal System.Windows.Forms.Button btnToExcel;
+        internal System.Windows.Forms.Button btnToWord;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button3;
+        internal System.Windows.Forms.Button btnOK;
+        internal System.Windows.Forms.Label label6;
     }
 }

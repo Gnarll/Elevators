@@ -77,6 +77,8 @@
       <DependentUpon>FrmStat.cs</DependentUpon>
     </Compile>
     <Compile Include="Dialogs\ILiftCreatable.cs" />
+    <Compile Include="Dialogs\IResultable.cs" />
+    <Compile Include="Dialogs\ResultPresenter.cs" />
     <Compile Include="FrmLift.cs">
       <SubType>Form</SubType>
     </Compile>
