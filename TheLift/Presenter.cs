@@ -26,8 +26,9 @@ namespace TheLift
             View = frm;
             View.button1.Click += BtnCreateLift_Click;
             View.btnControl.Click += BtnControl_Click;
+            View.button2.Click += TsmiShowStat_Click;
             View.btnCreatePerson.Click += BtnCreatePerson_Click;
-            View.button3.Click += TimePerFloor_Click;
+            View.button3.Click += TimePerFloor_Click;   
         }
 
         private void TimePerFloor_Click(object sender, EventArgs e)
@@ -39,6 +40,24 @@ namespace TheLift
             catch (Exception)
             {
                 MessageBox.Show("Введите целое число", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void TsmiShowStat_Click(object sender, EventArgs e)
+        {
+            if (OurLift != null)
+            {
+                if (OurLift.History.Count != 0)
+                {
+                    Dialogs.FrmStat frs = new Dialogs.FrmStat(OurLift);
+                    frs.ShowDialog();
+                }
+                else
+                    MessageBox.Show("Лифт не совершил ни одной поездки", "Уведомление", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("Необходимо создать лифт.", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -58,9 +77,7 @@ namespace TheLift
                             View.txtCurrentFloor.Text = OurLift.CurrentFloor.ToString();
                         }));   
                     }
-                    RefreshQueue();
-                    RefreshButtons();
-                    RefreshPessengers();
+                    Refresh();
                 }
                 else
                 {
@@ -78,6 +95,8 @@ namespace TheLift
             if (dr == DialogResult.Yes)
             {
                 this.OurLift = fcr.NewLift;
+                View.nudCurrentFloor.Maximum = 20;
+                View.nudTargetFloor.Maximum = 20;
                 View.txtCurrentFloor.Text = OurLift.CurrentFloor.ToString();
                 RefreshButtons();
             }
@@ -102,15 +121,18 @@ namespace TheLift
                 View.IsActive = !View.IsActive;
                 if (View.IsActive)
                 {
-                    MovingLift.Resume();
-                    TimerThread.Resume();
+                    if (MovingLift.IsAlive)
+                        MovingLift.Resume();
+                    if (TimerThread.IsAlive)
+                        TimerThread.Resume();
                     View.btnControl.Text = "Остановить систему";
                     View.splitContainer2.Enabled = true;
                     View.button1.Visible = false;
                 }
                 else
                 {
-                    MovingLift.Suspend();
+                    if(OurLift.IsMove)
+                        MovingLift.Suspend();
                     TimerThread.Suspend();
                     View.btnControl.Text = "Запустить систему";
                     View.splitContainer2.Enabled = false;
@@ -146,9 +168,8 @@ namespace TheLift
 
         }
 
-        public void RefreshQueue()// обновление элементов управления
+        public void RefreshQueue()
         {
-
             VoidDelegate clear = View.lbQueue.Items.Clear;
             Add add = View.lbQueue.Items.Add;
             View.Invoke(clear);
@@ -171,12 +192,23 @@ namespace TheLift
             }
         }
 
+        public void RefreshHistory()
+        {
+            VoidDelegate clear = View.lbHistory.Items.Clear;
+            View.Invoke(clear);
+            Add add = View.lbHistory.Items.Add;
+            foreach (Person pe in OurLift.History)
+            {
+                View.Invoke(add, pe.ToString());
+            }
+        }
+
         public void Refresh()
         {
-
             RefreshQueue();
             RefreshButtons();
             RefreshPessengers();
+            RefreshHistory();
         }
     }
 }

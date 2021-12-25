@@ -47,8 +47,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.nudCurrentFloor = new System.Windows.Forms.NumericUpDown();
             this.label4 = new System.Windows.Forms.Label();
-            this.nudWeight = new System.Windows.Forms.NumericUpDown();
-            this.label3 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
@@ -93,7 +91,6 @@
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudTargetFloor)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudCurrentFloor)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudWeight)).BeginInit();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel6.SuspendLayout();
@@ -282,10 +279,10 @@
             this.lbQueue.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lbQueue.FormattingEnabled = true;
             this.lbQueue.ItemHeight = 20;
-            this.lbQueue.Location = new System.Drawing.Point(27, 294);
+            this.lbQueue.Location = new System.Drawing.Point(27, 256);
             this.lbQueue.Margin = new System.Windows.Forms.Padding(4);
             this.lbQueue.Name = "lbQueue";
-            this.lbQueue.Size = new System.Drawing.Size(273, 124);
+            this.lbQueue.Size = new System.Drawing.Size(273, 44);
             this.lbQueue.TabIndex = 13;
             this.lbQueue.SelectedIndexChanged += new System.EventHandler(this.lbQueue_SelectedIndexChanged);
             // 
@@ -296,15 +293,13 @@
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.nudCurrentFloor);
             this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.nudWeight);
-            this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.groupBox1.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.groupBox1.Location = new System.Drawing.Point(16, 20);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox1.Size = new System.Drawing.Size(400, 233);
+            this.groupBox1.Size = new System.Drawing.Size(400, 188);
             this.groupBox1.TabIndex = 6;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Вызвать лифт";
@@ -314,7 +309,7 @@
             this.btnCreatePerson.DialogResult = System.Windows.Forms.DialogResult.Yes;
             this.btnCreatePerson.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.btnCreatePerson.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnCreatePerson.Location = new System.Drawing.Point(212, 186);
+            this.btnCreatePerson.Location = new System.Drawing.Point(213, 131);
             this.btnCreatePerson.Margin = new System.Windows.Forms.Padding(4);
             this.btnCreatePerson.Name = "btnCreatePerson";
             this.btnCreatePerson.Size = new System.Drawing.Size(155, 39);
@@ -326,7 +321,7 @@
             // nudTargetFloor
             // 
             this.nudTargetFloor.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.nudTargetFloor.Location = new System.Drawing.Point(213, 142);
+            this.nudTargetFloor.Location = new System.Drawing.Point(213, 83);
             this.nudTargetFloor.Margin = new System.Windows.Forms.Padding(4);
             this.nudTargetFloor.Minimum = new decimal(new int[] {
             1,
@@ -346,7 +341,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label5.Location = new System.Drawing.Point(8, 144);
+            this.label5.Location = new System.Drawing.Point(9, 82);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(147, 25);
@@ -356,7 +351,7 @@
             // nudCurrentFloor
             // 
             this.nudCurrentFloor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.nudCurrentFloor.Location = new System.Drawing.Point(213, 97);
+            this.nudCurrentFloor.Location = new System.Drawing.Point(213, 45);
             this.nudCurrentFloor.Margin = new System.Windows.Forms.Padding(4);
             this.nudCurrentFloor.Minimum = new decimal(new int[] {
             1,
@@ -376,54 +371,19 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label4.Location = new System.Drawing.Point(8, 100);
+            this.label4.Location = new System.Drawing.Point(8, 47);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(148, 25);
             this.label4.TabIndex = 7;
             this.label4.Text = "Текущий этаж";
             // 
-            // nudWeight
-            // 
-            this.nudWeight.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.nudWeight.Location = new System.Drawing.Point(213, 53);
-            this.nudWeight.Margin = new System.Windows.Forms.Padding(4);
-            this.nudWeight.Maximum = new decimal(new int[] {
-            150,
-            0,
-            0,
-            0});
-            this.nudWeight.Minimum = new decimal(new int[] {
-            20,
-            0,
-            0,
-            0});
-            this.nudWeight.Name = "nudWeight";
-            this.nudWeight.Size = new System.Drawing.Size(115, 30);
-            this.nudWeight.TabIndex = 6;
-            this.nudWeight.Value = new decimal(new int[] {
-            60,
-            0,
-            0,
-            0});
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.Location = new System.Drawing.Point(8, 55);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(68, 25);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "Масса";
-            // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(20, 260);
+            this.label8.Location = new System.Drawing.Point(22, 223);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(115, 29);
@@ -780,7 +740,6 @@
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudTargetFloor)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudCurrentFloor)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudWeight)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.panel5.ResumeLayout(false);
@@ -804,12 +763,10 @@
         private System.Windows.Forms.SplitContainer splitContainer1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label label3;
         internal System.Windows.Forms.NumericUpDown nudTargetFloor;
         private System.Windows.Forms.Label label5;
         internal System.Windows.Forms.NumericUpDown nudCurrentFloor;
         private System.Windows.Forms.Label label4;
-        internal System.Windows.Forms.NumericUpDown nudWeight;
         internal System.Windows.Forms.Button btnCreatePerson;
         internal System.Windows.Forms.Button btnControl;
         private System.Windows.Forms.Label label8;
