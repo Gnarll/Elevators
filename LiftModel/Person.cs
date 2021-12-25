@@ -19,6 +19,7 @@ namespace LiftModel
                 return SystemName + " - едет c " + StartFloor.ToString() + " на  " + TargetFloor.ToString();
             }
         }
+
         public Person(int startFloor, int targetFloor)
         {
             Random r = new Random();
@@ -27,5 +28,7 @@ namespace LiftModel
             StartFloor = startFloor;
             TargetFloor = targetFloor;
         }
+
+        public override string ToString() { return SystemName + " приехал на " + TargetFloor.ToString() + " этаж "; }
     }
 }

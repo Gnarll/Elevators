@@ -14,13 +14,18 @@ namespace LiftModel
         public List<LiftButton> Buttons { get; set; } = new List<LiftButton>();
         public List<Person> Queue { get; set; } = new List<Person>();
         public List<Person> Pessengers { get; set; } = new List<Person>();
+        public List<Person> History { get; set; } = new List<Person>();
+        public int TripsCounter { get; set; } = 1;
+        public int EmptyTripsCounter { get; set; } = 0;
         public int ActiveUsers => Pessengers.Count + Queue.Count;
         public int CurrentMin = 0;
         public int CurrentSec = 0;
+        public int peopleNum { get; set; } = 0;
         private int timeMoving = 1000;
         public bool IsMove { get; set; } = false;
         public bool IsEmpty { get; set; } = true;
         Direction LiftDirection = Direction.Up;
+
         public int GetTimeMoving()
         {
             return timeMoving;
@@ -39,15 +44,13 @@ namespace LiftModel
 
         public void Move()
         {
+            
             if (ActiveUsers > 0)
             {
                 IsMove = true;
                 if (Pessengers.Count == 0)
                 {
-                    if (!IsEmpty)
-                    {
-                        IsEmpty = true;
-                    }
+                    IsEmpty = true;
                     SetDirectionIfEmpty();
                 }
                 else
@@ -112,20 +115,23 @@ namespace LiftModel
         {
             List<Person> CriticalPerson = new List<Person>();
             CriticalPerson = Pessengers.FindAll(item => item.TargetFloor == CurrentFloor);
+            History.AddRange(CriticalPerson);
             Pessengers.RemoveAll(item => item.TargetFloor == CurrentFloor);
         }
 
         private void Transfer()
-        {
-
+        {            
             if (Pessengers.FindAll(item => item.TargetFloor == CurrentFloor).Count + Queue.FindAll(item => item.StartFloor == CurrentFloor).Count > 0)
             {
+                peopleNum += Pessengers.Count;
                 ExitFrom();
                 Enter();
-
+               
             }
             else
             {
+                if (Pessengers.Count == 0)
+                    EmptyTripsCounter++;
                 GoToNextFloor();
             }
         }
@@ -134,7 +140,14 @@ namespace LiftModel
         {
             if (Pessengers.Count > 5)
             {
-                Pessengers.Remove(Pessengers.Last());
+                while (Pessengers.Count > 5)
+                {
+                    Queue.Add(Pessengers.Last());
+                    Pessengers.Remove(Pessengers.Last());
+                }
+                if (LiftDirection == Direction.Up)
+                    CurrentFloor++;
+                else CurrentFloor--;
             }
             else
             {
@@ -166,7 +179,7 @@ namespace LiftModel
             }
             if (IsChangeDirection)
             {
-
+                TripsCounter++;
                 if (LiftDirection == Direction.Up)
                     LiftDirection = Direction.Down;
                 else LiftDirection = Direction.Up;

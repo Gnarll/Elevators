@@ -285,7 +285,7 @@
             this.lbQueue.Location = new System.Drawing.Point(27, 294);
             this.lbQueue.Margin = new System.Windows.Forms.Padding(4);
             this.lbQueue.Name = "lbQueue";
-            this.lbQueue.Size = new System.Drawing.Size(273, 124);
+            this.lbQueue.Size = new System.Drawing.Size(273, 84);
             this.lbQueue.TabIndex = 13;
             this.lbQueue.SelectedIndexChanged += new System.EventHandler(this.lbQueue_SelectedIndexChanged);
             // 
